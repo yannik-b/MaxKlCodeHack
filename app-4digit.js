@@ -21,7 +21,7 @@ function doCode() {
     while (code.length < cLength) { code = "0" + code; }
 
     if (counter % 40 === 0) {
-		var nowT = new Date().valueOf()
+		var nowT = new Date().valueOf();
 		var timeNeeded = (nowT - begin) / 1000;
         var percentage = counter / Math.pow(cChars.length, cLength) * 100;
 		var left = (Math.pow(cChars.length, cLength) - counter);
@@ -30,10 +30,13 @@ function doCode() {
 
     request({
         url: 'http://new.maxkl.de:8080/login2',
-        body: "{\"code\": \"" + code + "\"}",
+				json: true,
+        body: {code: code},
         method: 'POST',
+
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Accept": "application/x-www-form-urlencoded",
+						"Content-Type": "application/json"
         }
     }, function(err, response, body) {
         if (err) {
@@ -42,7 +45,7 @@ function doCode() {
 			failed++;
 		}
 		else {
-	        var found = JSON.parse(body).found;
+	        var found = body.found;
 
 	        if (found) {
 	            console.log("found: " + code);
