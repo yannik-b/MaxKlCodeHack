@@ -29,7 +29,7 @@ function doCode() {
     }
 
     request({
-        url: 'http://new.maxkl.de:8080/login',
+        url: 'http://new.maxkl.de:8080/login2',
         body: "{\"code\": \"" + code + "\"}",
         method: 'POST',
         headers: {
