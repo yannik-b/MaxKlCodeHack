@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "request": ">1",
+    "randomstring": ">=1",
+    "sleep": ">=0"
+  }
+}
