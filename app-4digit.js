@@ -49,7 +49,7 @@ function doCode() {
 
 	        if (found) {
 	            console.log("found: " + code);
-	            file.write("code" + "\n");
+	            file.write(code + "\n");
 	            found++;
 	        }
 		}
