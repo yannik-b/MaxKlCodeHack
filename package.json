@@ -1,6 +1,25 @@
 {
+  "name": "maxklcodehack",
+  "version": "1.2.0",
+  "description": "Little Code Cracker for maxkl.de",
+  "main": "app.js",
   "dependencies": {
-    "request": ">1",
-    "randomstring": ">=1"
-  }
+    "randomstring": "^1.1.5",
+    "sleep": "^3.0.1",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yannik-b/MaxKlCodeHack.git"
+  },
+  "author": "Yannik Buerkle",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yannik-b/MaxKlCodeHack/issues"
+  },
+  "homepage": "https://github.com/yannik-b/MaxKlCodeHack#readme"
 }
